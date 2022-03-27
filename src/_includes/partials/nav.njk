@@ -1,0 +1,5 @@
+<ul class="max-w-lg mx-auto mt-6 px-4 text-center">
+{% for entry in collections.all | eleventyNavigation %}
+    <li>{{ collections.all | eleventyNavigation | eleventyNavigationToHtml }}</li>
+{% endfor %}
+</ul>
